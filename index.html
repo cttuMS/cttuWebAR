@@ -6,16 +6,11 @@
   <h1>Hello world!</h1>
   <a-scene embedded arjs>
     <a-marker preset='custom' type='pattern' url='./cttuPattern.patt'>
-      <a-entity
-        scale="0.2 0.2 0.2" 
-        obj-model="obj: url(./CTmodel.obj); mtl: url(./CTmodel.mtl)">
-        <a-animation
-          attribute="rotation"
-          easing="linear"
-          dur="60000"
-          to="0 360 0"
-          repeat="indefinite">
-        </a-animation>
+      <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+        <a-entity
+          scale="0.2 0.2 0.2" 
+          obj-model="obj: url(./CTmodel.obj); mtl: url(./CTmodel.mtl)">
+        </a-entity>
       </a-entity>
     </a-marker>
     <a-entity camera></a-entity>

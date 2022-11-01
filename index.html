@@ -4,10 +4,13 @@
 </head>
 <body>
   <a-scene embedded arjs>
-    <a-marker preset='hiro'> 
+    <a-marker preset='hiro'>
       <a-entity
         scale="0.2 0.2 0.2" 
-        obj-model="obj: url(./CSmodel.obj); mtl: url(./CSmodel.mtl)">
+        gltf-model=”./CSmodel.gltf”>
+      <!--<a-entity
+        scale="0.2 0.2 0.2" 
+        obj-model="obj: url(./CSmodel.obj); mtl: url(./CSmodel.mtl)">-->
       </a-entity>
     </a-marker>
     <a-entity camera></a-entity>

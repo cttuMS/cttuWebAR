@@ -5,6 +5,10 @@
 <body>
   <h1>1</h1>
   <a-scene embedded arjs>
+    <a-assets>
+      <a-asset-item id="model-obj" src="./CTmodel.obj"></a-asset-item>
+      <a-asset-item id="model-mtl" src="./CTmodel.mtl"></a-asset-item>
+    </a-assets>
     <a-entity light="type: ambient; color: #BBB"></a-entity>
     <a-entity light="type: directional; color: #FFF; intensity: 0.2" position="-0.5 1 1"></a-entity>
     <a-entity light="type: directional; color: #b700b5; intensity: 0.6" position="-5 5 0"></a-entity>
@@ -13,7 +17,7 @@
       <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; easing: linear; loop: true; dur: 10000">
         <a-entity
           scale="0 0 0" animation="property: scale; to: 0.2 0.2 0.2; loop: 1; duration: 3000"
-          obj-model="obj: url(./CTmodel.obj); mtl: url(./CTmodel.mtl)">
+          obj-model="obj: #model-obj; mtl: #model-mtl">
         </a-entity>
       </a-entity>
     </a-marker>

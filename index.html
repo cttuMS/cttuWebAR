@@ -3,15 +3,15 @@
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 </head>
 <body>
-  <div>
-    <h1>Hello world!</h1>
-  </div>
+  <h1>1</h1>
   <a-scene embedded arjs>
     <a-marker preset='custom' type='pattern' url='./cttuPattern.patt'>
       <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; easing: linear; loop: true; dur: 10000">
-        <a-entity
-          scale="0.2 0.2 0.2" 
-          obj-model="obj: url(./CTmodel.obj); mtl: url(./CTmodel.mtl)">
+        <a-entity scale="0 0 0" animation="property: scale; to: 0.2 0.2 0.2; loop: 1; duration: 3000">
+          <a-entity
+            <!--scale="0.2 0.2 0.2"--> 
+            obj-model="obj: url(./CTmodel.obj); mtl: url(./CTmodel.mtl)">
+          </a-entity>
         </a-entity>
       </a-entity>
     </a-marker>

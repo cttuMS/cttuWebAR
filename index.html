@@ -11,6 +11,8 @@
       <a-asset-item id="tree-mtl" src="./models/tree.mtl"></a-asset-item>
       <a-asset-item id="strip1-obj" src="./models/strip1.obj"></a-asset-item>
       <a-asset-item id="strip2-obj" src="./models/strrip2.obj"></a-asset-item>
+      <a-asset-item id="gifts-obj" src="./models/gifts.obj"></a-asset-item>
+      <a-asset-item id="gifts-mtl" src="./models/gifts.mtl"></a-asset-item>
     </a-assets>
     <a-entity light="type: ambient; color: #BBB"></a-entity>
     <a-entity light="type: directional; color: #FFF; intensity: 0.2" position="0 1 1"></a-entity>
@@ -31,14 +33,18 @@
         </a-entity>
         <a-entity
           scale="0.2 0.2 0.2"
-          material="color: #ff0ef0"
+          material="color: #f3f815"
           obj-model="obj: #strip2-obj"
-          animation="property: material.color; to: #f3f815; easing: easeInOutQuad; dir: alternate; loop: true; dur: 600">
+          animation="property: material.color; to: #ff0ef0; easing: easeInOutQuad; dir: alternate; loop: true; dur: 600">
         </a-entity>
       </a-entity>
       <a-entity
           scale="0.2 0.2 0.2"
           obj-model="obj: #circle-obj; mtl: #circle-mtl">
+      </a-entity>
+      <a-entity
+          scale="0.2 0.2 0.2"
+          obj-model="obj: #gifts-obj; mtl: #gifts-mtl">
       </a-entity>
       <a-text font="mozillavr" color="white" value="Happy New Year" scale="1 1 1" position="-0.4 1.5 0" width="2.5"
               animation="property: position; easing: easeInOutQuad; dir: alternate; dur: 1000; to: -0.4 1.6 0; loop: true"></a-text>

@@ -10,7 +10,7 @@
       <a-asset-item id="tree-obj" src="./models/tree.obj"></a-asset-item>
       <a-asset-item id="tree-mtl" src="./models/tree.mtl"></a-asset-item>
       <a-asset-item id="strip1-obj" src="./models/strip1.obj"></a-asset-item>
-      <a-asset-item id="strip1-mtl" src="./models/strip1.mtl"></a-asset-item>
+      <a-asset-item id="strip2-obj" src="./models/strip2.obj"></a-asset-item>
     </a-assets>
     <a-entity light="type: ambient; color: #BBB"></a-entity>
     <a-entity light="type: directional; color: #FFF; intensity: 0.2" position="0 1 1"></a-entity>
@@ -25,10 +25,16 @@
         </a-entity>
         <a-entity
           scale="0.2 0.2 0.2"
-          material="color: #ff000e"
+          material="color: #f9061e"
           obj-model="obj: #strip1-obj"
-          animation="property: material.color; to: #be05fa; loop: true; dur: 1000">
-      </a-entity>
+          animation="property: material.color; to: #06f9e1; loop: true; dur: 1000">
+        </a-entity>
+        <a-entity
+          scale="0.2 0.2 0.2"
+          material="color: #ff0ef0"
+          obj-model="obj: #strip1-obj"
+          animation="property: material.color; to: #f3f815; loop: true; dur: 1000">
+        </a-entity>
       </a-entity>
       <a-entity
           scale="0.2 0.2 0.2"

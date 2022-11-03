@@ -8,8 +8,12 @@
   </div>
   <a-scene embedded arjs>
     <a-assets>
-      <a-asset-item id="model-obj" src="./CTmodel.obj"></a-asset-item>
-      <a-asset-item id="model-mtl" src="./CTmodel.mtl"></a-asset-item>
+      <!--<a-asset-item id="model-obj" src="./CTmodel.obj"></a-asset-item>
+      <a-asset-item id="model-mtl" src="./CTmodel.mtl"></a-asset-item>-->
+      <a-asset-item id="circle-obj" src="model/circle.obj"></a-asset-item>
+      <a-asset-item id="circle-mtl" src="model/circle.mtl"></a-asset-item>
+      <a-asset-item id="tree-obj" src="model/tree.obj"></a-asset-item>
+      <a-asset-item id="tree-mtl" src="model/tree.mtl"></a-asset-item>
     </a-assets>
     <a-entity light="type: ambient; color: #BBB"></a-entity>
     <a-entity light="type: directional; color: #FFF; intensity: 0.2" position="-0.5 1 1"></a-entity>
@@ -19,9 +23,13 @@
       <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; easing: linear; loop: true; dur: 20000">
         <a-entity
           scale="0 0 0" animation="property: scale; to: 0.2 0.2 0.2; loop: 1; duration: 3000"
-          obj-model="obj: #model-obj; mtl: #model-mtl"
+          obj-model="obj: #tree-obj; mtl: #tree-mtl"
           sound="src: url(./NYmusic.mp3); on: click">
         </a-entity>
+      </a-entity>
+      <a-entity
+          scale="0.2 0.2 0.2"
+          obj-model="obj: #circle-obj; mtl: #circle-mtl">
       </a-entity>
     </a-marker>
     <a-entity camera></a-entity>

@@ -13,9 +13,10 @@
       <a-asset-item id="strip1-mtl" src="./models/strip1.mtl"></a-asset-item>
     </a-assets>
     <a-entity light="type: ambient; color: #BBB"></a-entity>
-    <a-entity light="type: directional; color: #FFF; intensity: 0.2" position="-0.5 1 1"></a-entity>
-    <a-entity light="type: directional; color: #b700b5; intensity: 0.6" position="-5 5 0"></a-entity>
-    <a-entity light="type: directional; color: #00b703; intensity: 0.6" position="5 5 0"></a-entity>
+    <a-entity light="type: ambient; color: #BBB"></a-entity>
+      <a-entity light="type: directional; color: #FFF; intensity: 0.1" position="0 1 1"></a-entity>
+      <a-entity light="type: directional; color: #b700b5; intensity: 0.4" position="-5 5 5"></a-entity>
+      <a-entity light="type: directional; color: #00b703; intensity: 0.4" position="5 5 5"></a-entity>
     <a-marker preset='custom' type='pattern' url='./cttuPattern.patt'>
       <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; easing: linear; loop: true; dur: 20000">
         <a-entity
@@ -23,15 +24,15 @@
           obj-model="obj: #tree-obj; mtl: #tree-mtl"
           sound="src: url(./NYmusic.mp3); on: click">
         </a-entity>
+        <a-entity
+          scale="0.2 0.2 0.2"
+          obj-model="obj: #strip1-obj; mtl: #strip1-mtl"
+          material="color: #ff000e">
+      </a-entity>
       </a-entity>
       <a-entity
           scale="0.2 0.2 0.2"
           obj-model="obj: #circle-obj; mtl: #circle-mtl">
-      </a-entity>
-      <a-entity
-          scale="0.2 0.2 0.2"
-          obj-model="obj: #strip1-obj; mtl: #strip1-mtl"
-          color: ff000e">
       </a-entity>
     </a-marker>
     <a-entity camera></a-entity>

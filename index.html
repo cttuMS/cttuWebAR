@@ -9,6 +9,8 @@
       <a-asset-item id="circle-mtl" src="./models/circle.mtl"></a-asset-item>
       <a-asset-item id="tree-obj" src="./models/tree.obj"></a-asset-item>
       <a-asset-item id="tree-mtl" src="./models/tree.mtl"></a-asset-item>
+      <a-asset-item id="strip1-obj" src="./models/strip1.obj"></a-asset-item>
+      <a-asset-item id="strip1-mtl" src="./models/strip1.mtl"></a-asset-item>
     </a-assets>
     <a-entity light="type: ambient; color: #BBB"></a-entity>
     <a-entity light="type: directional; color: #FFF; intensity: 0.2" position="-0.5 1 1"></a-entity>
@@ -25,6 +27,11 @@
       <a-entity
           scale="0.2 0.2 0.2"
           obj-model="obj: #circle-obj; mtl: #circle-mtl">
+      </a-entity>
+      <a-entity
+          scale="0.2 0.2 0.2"
+          obj-model="obj: #strip1-obj; mtl: #strip1-mtl"
+          light="type: point; color: ff000e; intensity: 5">
       </a-entity>
     </a-marker>
     <a-entity camera></a-entity>
